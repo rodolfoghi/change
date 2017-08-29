@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Change</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h3 class="center">Are you ready to change?</h3>
+
+    <div id="result" class="center hidden alert alert-danger">
+    </div>
+    <div class="center">
+      <button id="start-button" class="btn btn-start btn-success">START</button>
+    </div>
+    <p id="scoreUI" class="center hidden start-hidden">Pontos: 0</p>
+    <div class="center hidden start-hidden">
+      <canvas id="main-game" width="100" height="200"></canvas>
+    </div>
+    <p class="center hidden start-hidden">
+      <button id="btnLeft" class="btn btn-danger">
+        <img id="imgLeft" src="./assets/img/arrow-left-bold-circle.svg" alt="LEFT">
+      </button>
+      <button id="btnRight" class="btn btn-primary">
+          <img id="imgRight" src="./assets/img/arrow-right-bold-circle-outline.svg" alt="LEFT">
+      </button>
+    </p>
+
+    <div class="alert alert-primary">
+      <h3>Instruções</h3>
+      <ul>
+        <li>O objetivo do jogo é evitar a colisão enter os quadrados azuis e vermelhos.</li>
+        <li>Utilize os botões para mover o quadrado azul para esquerda ou para a direita.</li>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
